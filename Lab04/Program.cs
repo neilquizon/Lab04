@@ -10,6 +10,7 @@ namespace Project
     {
         static void Main(string[] args)
         {
+
             string[] animalKinds = new string[] { "Monkey", "Bear" };
             MainMenu menu = new MainMenu(animalKinds);
             string selectedOption;
@@ -20,9 +21,9 @@ namespace Project
                 animal.Species = menu.GetSpecies(animal);
                 animal.Weight = menu.GetWeight();
                 menu.DisplayRecommendation(animal);
-            }
-
-            Console.ReadLine();
+            }            
         }
+
+
     }
 }

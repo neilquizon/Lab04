@@ -19,6 +19,55 @@ namespace Project.Animals
 
         private string[] speciesOptions = new string[] { "Black", "Polar" };
 
+        public override string[] SpeciesOptions
+        {
+            get { return this.speciesOptions; }
+        }
+
+        public override float Serving
+        {
+            get
+            {
+                switch (Species)
+                {
+                    case "Black":
+                        return this.Weight * BLACK_WEIGHT;
+
+                    case "Polar":
+                        return this.Weight * POLAR_WEIGHT;
+
+                    default:
+                        return NO_WEIGHT;
+                }
+            }
+        }
+
+        public override string Meal
+        {
+            get
+            {
+                switch (Species)
+                {
+                    case "Black":
+                        return "berries, green vegetation, flowers, fruits, fish";
+
+                    case "Polar":
+                        return "berries, fish";
+
+                    default:
+                        return "";
+                }
+            }
+        }
+
+        public override string Time
+        {
+            get
+            {
+                return "9AM and 3PM";
+            }
+        }
+
 
 
     }

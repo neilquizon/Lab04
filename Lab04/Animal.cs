@@ -29,5 +29,15 @@ namespace Project.Animals
         // Species options based on selected Mammal type
         public abstract string[] SpeciesOptions { get; }
 
-    }
+        public Animal()
+        {
+
+        }
+
+        public Animal(string mammalType)
+        {
+            this.MammalType = mammalType;
+        }
+
+     }
 }

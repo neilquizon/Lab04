@@ -1,7 +1,4 @@
 ﻿using System;
-using Project;
-using Project.Menu;
-using Project.Animals;
 
 
 namespace Project

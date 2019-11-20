@@ -6,7 +6,7 @@ namespace Project.Menu
 {
     sealed class MainMenu
     {
-        private const string ERROR = "Invalid Entry.";
+        private const string ERROR = "\nInvalid input. Please try again.";
         private static string userInput;
         private const int FIRST_OPTION = 1;
         private const int THIRD_OPTION = 1;

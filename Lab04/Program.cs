@@ -1,4 +1,7 @@
 ﻿using System;
+using Project;
+using Project.Menu;
+using Project.Animals;
 
 
 namespace Project
@@ -19,6 +22,23 @@ namespace Project
                 animal.Weight = menu.GetWeight();
                 menu.DisplayRecommendation(animal);
             }            
+        }
+        public static Animal GetMainOption(string animal)
+        {
+            switch (animal)
+            {
+                case "Monkey":
+                    return new Monkey();
+
+                case "Bear":
+                    return new Bear();
+
+                case "Quit":
+                    return null;
+
+                default:
+                    throw new NotImplementedException(); //We only support monkey and bear
+            }
         }
 
 

@@ -1,22 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Project.Animals;
+using System;
 
-namespace Lab04
+
+namespace Project.Menu
 {
-    class Menu
+    sealed class MainMenu
     {
-        public static void MenuShow()
-        {
-            Console.WriteLine("================");
-            Console.WriteLine("\nZoo Menu Planner");
-            Console.WriteLine("\n================");
-            Console.WriteLine("\n1. Monkey");
-            Console.WriteLine("\n2. Bear");
-            Console.WriteLine("\n3. Quit");
-            Console.WriteLine("\nSelection");
-
-        }
+        private const string ERROR = "Invalid Entry.";
+        private static string userInput;
+        private const int FIRST_OPTION = 1;
+        private const int THIRD_OPTION = 1;
+        private const int ARRAY_INDEX = 0;
+        private const int QUIT = 3;
+        private const float INVALID_WEIGHT = -999.9f;
 
     }
 }

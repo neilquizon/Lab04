@@ -6,7 +6,7 @@ namespace Lab04
     {
         static void Main(string[] args)
         {
-            Menu.MenuShow();
+            
             Console.ReadLine();
         }
     }

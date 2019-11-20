@@ -1,6 +1,10 @@
 ﻿using System;
+using Project;
+using Project.Menu;
+using Project.Animals;
 
-namespace Lab04
+
+namespace Project
 {
     class Program
     {
